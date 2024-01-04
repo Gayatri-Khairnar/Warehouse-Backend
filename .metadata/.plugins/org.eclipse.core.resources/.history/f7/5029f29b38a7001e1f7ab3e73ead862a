@@ -1,0 +1,63 @@
+package com.agro.entity;
+import jakarta.persistence.*;
+
+import java.util.List;
+
+import com.agro.entity.Address;
+
+@Entity
+@Table(name="warehouse")
+public class Warehouse {
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="warehouse")
+	private int id;
+	private String name;
+	private int capacity;
+	
+	private Address address;
+
+	
+	private List<StorageReserve> storageReserves;
+	
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public int getCapacity() {
+		return capacity;
+	}
+
+	public void setCapacity(int capacity) {
+		this.capacity = capacity;
+	}
+
+	public Address getAddress() {
+		return address;
+	}
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
+
+	public List<StorageReserve> getStorageReserves() {
+		return storageReserves;
+	}
+
+	public void setStorageReserves(List<StorageReserve> storageReserves) {
+		this.storageReserves = storageReserves;
+	}
+	
+}

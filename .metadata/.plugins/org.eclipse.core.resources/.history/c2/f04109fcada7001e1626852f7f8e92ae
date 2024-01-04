@@ -1,0 +1,5 @@
+package com.agro.repository;
+
+public class UserRoleRepository {
+
+}

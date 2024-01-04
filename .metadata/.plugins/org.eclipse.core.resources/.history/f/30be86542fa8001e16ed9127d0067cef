@@ -1,0 +1,7 @@
+package com.agro.utils;
+
+public enum Gender {
+	public static enum Gender{
+		MALE , FEMALE;
+	}
+}

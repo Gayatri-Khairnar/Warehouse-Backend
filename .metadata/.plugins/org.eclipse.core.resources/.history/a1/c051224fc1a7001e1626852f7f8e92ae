@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <!-- Define the file appender -->
+    <appender name="FILE" class="ch.qos.logback.core.FileAppender">
+        <file>D:/MegaProject/Backend/logs/agro-warehouse-logs.log</file> <!-- Specify the path and filename of the log file -->
+        <encoder>
+            <pattern>%date{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- Set the root logger level and associate it with the file appender -->
+    <root level="info">
+        <appender-ref ref="FILE"/>
+    </root>
+</configuration>

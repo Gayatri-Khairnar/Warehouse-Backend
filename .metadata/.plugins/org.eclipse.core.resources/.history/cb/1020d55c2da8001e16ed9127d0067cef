@@ -1,0 +1,23 @@
+package com.agro.utils;
+
+public enum Roles {
+
+	
+	 ADMIN("Admin",1), FARMER("Farmer",2), BUYER("Buyer",3);
+	
+	
+	private String value;
+	
+	private int roleId;
+	
+	public String getValue() {
+		return value;
+	}
+
+	Roles(String value,int roleId){
+		this.value  = value;
+		this.roleId = roleId;
+	}
+	
+
+}

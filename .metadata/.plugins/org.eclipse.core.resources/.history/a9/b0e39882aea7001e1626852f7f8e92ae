@@ -1,0 +1,15 @@
+package com.agro.services;
+
+import com.agro.entity.UserRole;
+
+public class UserRoleService {
+	
+	private 
+
+	public void registerUserRole(User user, Role role) {
+		UserRole ur = new UserRole();
+		ur.setUser(user);
+		ur.setRole(role);
+	}
+
+}

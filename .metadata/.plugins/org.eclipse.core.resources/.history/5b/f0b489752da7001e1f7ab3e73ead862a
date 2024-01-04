@@ -1,0 +1,57 @@
+package com.agro.entity;
+import java.util.List;
+
+import jakarta.persistence.*;
+import jakarta.persistence.*;
+
+@Entity
+@Table(name="crop")
+public clas Crop {
+	
+	@Id
+	@GeneratedValue(strategy=GenerationType.IDENTITY)
+	@Column(name="crop")
+	private int id;	//1
+	private String name;	//onion
+	private CropType type;	//KHARIF
+	
+	@OneToMany(mappedBy = "crop")
+	private List<StorageReserve> storageReserves;
+	
+	public static enum CropType{
+		KHARIF , RABI , ZAID
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public CropType getType() {
+		return type;
+	}
+
+	public void setType(CropType type) {
+		this.type = type;
+	}
+
+	public List<StorageReserve> getStorageReserves() {
+		return storageReserves;
+	}
+
+	public void setStorageReserves(List<StorageReserve> storageReserves) {
+		this.storageReserves = storageReserves;
+	}
+	
+}

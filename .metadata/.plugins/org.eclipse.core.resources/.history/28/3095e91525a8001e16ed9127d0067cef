@@ -1,0 +1,9 @@
+package com.agro.request;
+
+public class LoginRequest {
+
+	private String password;
+	
+	private String email;
+	
+}

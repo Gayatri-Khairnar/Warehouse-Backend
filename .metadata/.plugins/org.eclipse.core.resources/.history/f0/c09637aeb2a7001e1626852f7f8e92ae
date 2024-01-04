@@ -1,0 +1,23 @@
+package com.agro.services;
+
+import java.util.Optional;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.agro.entity.Role;
+import com.agro.repository.RoleRepository;
+@Service
+public class RoleService {
+	@Autowired
+	private RoleRepository roleRepository;
+
+	public int registerRole(Role role) {
+		
+		System.out.println(role.toString());
+		
+		
+		Optional<Role> checkRole = roleRepository.findById(role.getId());
+		return checkRole.get().getId();
+	}
+}

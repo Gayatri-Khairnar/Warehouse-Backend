@@ -1,0 +1,21 @@
+2023-12-31 15:12:58.673 [restartedMain] INFO  com.agro.AgroBackendApplication - Starting AgroBackendApplication using Java 17.0.7 with PID 14600 (D:\MegaProject\Backend\Farms-management-backend\target\classes started by Nitish in D:\MegaProject\Backend\Farms-management-backend)
+2023-12-31 15:12:58.675 [restartedMain] INFO  com.agro.AgroBackendApplication - No active profile set, falling back to 1 default profile: "default"
+2023-12-31 15:13:00.847 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-12-31 15:13:01.132 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 284 ms. Found 4 JPA repository interfaces.
+2023-12-31 15:13:02.530 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port(s): 5151 (http)
+2023-12-31 15:13:02.532 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2023-12-31 15:13:02.533 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.17]
+2023-12-31 15:13:02.828 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2023-12-31 15:13:02.828 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 4140 ms
+2023-12-31 15:13:03.339 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2023-12-31 15:13:03.400 [restartedMain] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f850a9e
+2023-12-31 15:13:03.400 [restartedMain] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2023-12-31 15:13:03.403 [restartedMain] INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-12-31 15:13:03.424 [restartedMain] INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-12-31 15:13:05.105 [restartedMain] INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2023-12-31 15:13:05.373 [restartedMain] INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-12-31 15:13:06.627 [restartedMain] WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-12-31 15:13:07.331 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2023-12-31 15:13:07.451 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port(s): 5151 (http) with context path ''
+2023-12-31 15:13:07.463 [restartedMain] INFO  com.agro.AgroBackendApplication - Started AgroBackendApplication in 10.538 seconds (process running for 90.953)
+2023-12-31 15:13:07.469 [restartedMain] INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
